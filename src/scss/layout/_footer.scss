@@ -1,0 +1,85 @@
+.footer {
+  background-color: $colorFooter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0 45px 0;
+
+  & .icon-arrow {
+    width: 45px;
+    height: 45px;
+    padding: 11px 12px 10px 12.4px;
+    background-color: $colorSecondaryButton;
+    border-radius: 22.5px;
+    box-shadow: 0 2px 4px 0 black;
+    transform: translate(0px, -22.5px);
+    transition: box-shadow ease-out 0.7s;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    @keyframes arrow {
+      from {
+        transform: translate(0px, -32.5px);
+      }
+
+      50% {
+        transform: translate(0px, -10px);
+      }
+
+      to {
+        transform: translate(0px, -32.5px);
+      }
+    }
+  }
+
+  &__elements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media all and (min-width: 768px) {
+      max-width: 768px;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+      padding: 0 39px;
+    }
+
+    @media all and (min-width: 1280px) {
+      max-width: 1280px;
+      padding: 0 370px;
+    }
+  }
+
+  & .list-sections,
+  & .list-socialmedia {
+    list-style: none;
+    margin: 15px 0 15px 0;
+
+    @media all and (min-width: 768px) {
+      margin: 0px;
+    }
+
+    & .link-sections,
+    .link-socialmedia {
+      padding: 15px;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+
+  & .copy {
+    margin-top: 15px;
+
+    & .heart-icon {
+      color: $fontColorMidtone;
+    }
+
+    @media all and (min-width: 768px) {
+      order: -2;
+    }
+  }
+}

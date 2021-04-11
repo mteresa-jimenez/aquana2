@@ -1,0 +1,111 @@
+// header
+
+.menu {
+  font-family: $fontFamilyText;
+  font-size: 25px;
+}
+
+.header__hero {
+  color: $fontColorLight;
+
+  & .h1 {
+    font-family: $fontFamilyTitles;
+    font-size: bold;
+    font-size: 42px;
+    text-transform: uppercase;
+
+    @media all and (min-width: 768px) {
+      font-size: 80px;
+      line-height: 106px;
+    }
+
+    @media all and (min-width: 1280px) {
+      font-size: 100px;
+      line-height: 132px;
+    }
+  }
+
+  & .slogan {
+    font-family: $fontFamilyText;
+    font-size: 16px;
+    line-height: 21px;
+
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+    }
+  }
+}
+
+// sections
+
+.section-title {
+  color: $fontColorDark;
+  font-family: $fontFamilyTitles;
+  font-size: 24px;
+  text-transform: capitalize;
+
+  @media all and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 45px;
+  }
+
+  @media all and (min-width: 1280px) {
+    font-size: 32px;
+  }
+}
+
+.article-title {
+  font-family: $fontFamilyTitles;
+  font-size: 18px;
+
+  @media all and (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.small-title {
+  color: $fontColorLightMidtone;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: capitalize;
+
+  @media all and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+.section01,
+.section02 {
+  font-family: $fontFamilyText;
+  font-size: 18px;
+  line-height: 30px;
+
+  @media all and (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.section01__button,
+.section02__button {
+  font-family: $fontFamilyText;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.section01 {
+  color: $fontColorDarkMidtone;
+}
+
+// footer
+
+.footer__elements {
+  color: $fontColorLight;
+  font-family: $fontFamilyText;
+  text-align: center;
+}
+
+.list-sections,
+.list-socialmedia {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 30px;
+}
