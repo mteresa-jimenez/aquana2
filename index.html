@@ -7,18 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="stylesheet" href="./scss/core/reset.css" />
+    <link rel="stylesheet" href="./scss/layout/header.css" />
+    <link rel="stylesheet" href="./scss/layout/_footer.scss" />
     <link rel="icon" href="./assets/images/dinosaurio-favicon.png" type="image/x-icon"/>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   </head>
 
   <body>
+    <div id="header"></div>
     <div id="footer"></div>
     <!-- <include src="./partials/header.html"></include>
     <include src="./partials/main.html"></include>
     <include src="./partials/footer.html"></include>
      -->
      <script>
+      $( "#header" ).load( "./html/partials/header.html" );
       $( "#footer" ).load( "./html/partials/footer.html" );
     </script>
   </body>
