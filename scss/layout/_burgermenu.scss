@@ -1,8 +1,8 @@
 .menu-toggle {
-  background-color: $colorFooter;
+  background-color: var(--color-footer);
   width: 55px;
   height: 50px;
-  color: $fontColorLight;
+  color: var(--font-color-light);
   display: block;
   position: fixed;
   left: 0px;
@@ -11,16 +11,16 @@
   padding-left: 10px;
 
   &:hover {
-    background-color: $colorHeader;
+    background-color: var(--color-header);
   }
 
   & a {
     text-decoration: none;
-    color: $fontColorLight;
+    color: var(--font-color-light);
     transition: color 0.3s ease;
 
     &:hover {
-      color: $fontColorMidtone;
+      color: var(--font-color-midtone);
     }
   }
 
@@ -61,7 +61,7 @@
     margin-bottom: 5px;
     position: relative;
 
-    background: $fontColorLight;
+    background: var(--font-color-light);
     border-radius: 3px;
 
     z-index: 1;
@@ -83,7 +83,7 @@
 
 .menu {
   position: absolute;
-  background-color: $colorHeader;
+  background-color: var(--color-header);
   width: 300px;
   margin: -100px 0 0 -50px;
   padding: 50px;

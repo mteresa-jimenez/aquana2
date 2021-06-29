@@ -1,5 +1,5 @@
 .section01 {
-  background-color: $colorFirstSection;
+  background-color: var(--color-first-section);
   width: 100%;
   max-width: 320px;
   margin: auto;
@@ -26,9 +26,9 @@
   &__button {
     width: 76px;
     height: 45px;
-    color: $colorPrimaryButton;
-    background-color: $colorSecondaryButton;
-    border: $colorPrimaryButton solid 2px;
+    color: var(--color-primary-button);
+    background-color: var(--color-secondary-button);
+    border: var(--color-primary-button) solid 2px;
     border-radius: 22.5px;
     margin-top: 30px;
     transition: box-shadow ease-in 0.7s, font-size ease 0.7s;
@@ -38,9 +38,9 @@
     }
 
     &:active {
-      color: $colorSecondaryButton;
+      color: var(--color-secondary-button);
       font-size: 18px;
-      background-color: $colorPrimaryButton;
+      background-color: var(--color-primary-button);
       box-shadow: none;
     }
   }

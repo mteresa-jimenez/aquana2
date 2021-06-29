@@ -1,5 +1,5 @@
 .footer {
-  background-color: $colorFooter;
+  background-color: var(--color-footer);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +9,7 @@
     width: 45px;
     height: 45px;
     padding: 11px 12px 10px 12.4px;
-    background-color: $colorSecondaryButton;
+    background-color: var(--color-secondary-button);
     border-radius: 22.5px;
     box-shadow: 0 2px 4px 0 black;
     transform: translate(0px, -22.5px);
@@ -75,7 +75,7 @@
     margin-top: 15px;
 
     & .heart-icon {
-      color: $fontColorMidtone;
+      color: var(--font-color-midtone);
     }
 
     @media all and (min-width: 768px) {
