@@ -15,19 +15,24 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
-  /* @media all and (min-width: 768px) {
-    width: 690px;
-  } */
 }
 
 .header .slogan {
   margin: 10px 0 45px 0;
-
-  /* @media all and (min-width: 768px) {
-    margin: 20px 0 30px 0;
-  } */
 }
+
+/* TABLET */
+@media all and (min-width: 768px) {
+  .header__hero {
+    width: 690px;
+  }
+
+  .header .slogan {
+    margin: 20px 0 30px 0;
+  }
+
+}
+
 
 /* // DESKTOP */
 
