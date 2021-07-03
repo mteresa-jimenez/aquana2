@@ -12,7 +12,7 @@
   font-family: var(--font-family-titles);
   font-size: bold;
   font-size: 42px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .header__hero .slogan {
@@ -24,8 +24,8 @@
 /* TABLET */
 @media all and (min-width: 768px) {
   .header__hero .h1 {
-    font-size: 80px;
-    line-height: 106px;
+    font-size: 45px;
+    line-height: 60px;
   }
 
   .header__hero .slogan{
@@ -36,8 +36,8 @@
 /* // DESKTOP */
 @media all and (min-width: 1280px) {
   .header__hero .h1 {
-    font-size: 100px;
-    line-height: 132px;
+    font-size: 60px;
+    line-height: 90px;
   }
 }
 
@@ -45,7 +45,7 @@
 /* // sections */
 
 .section-title {
-  color: var(--font-color-dark);
+  color: var(--font-color-light);
   font-family: var(--font-family-titles);
   font-size: 24px;
   text-transform: capitalize;
@@ -53,7 +53,7 @@
 
 .article-title {
   font-family: var(--font-family-titles);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .small-title {
@@ -73,7 +73,7 @@
 .section02__button {
   font-family: var(--font-family-text);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .section01 {

@@ -11,46 +11,65 @@
 }
 
 .header__hero {
-  width: 290px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .header__hero h1 {
+  width: 290px;
+  margin-bottom: 15px;
   color: var(--font-color-dark-midtone);
 }
 
-.header .slogan {
-  margin: 10px 0 45px 0;
+.header .header__hero .wave-svg {
+  width: 100%;
+  height: 45px;
+  background-image: url(../../images/wave.svg);
+  display: block;
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  transform: rotate(180deg);
+}
+
+.header .header__hero .wave {
+  width: 100vw;
+  background: linear-gradient(rgba(25 , 179, 252, 0.8), rgb(25 , 179, 252));
+}
+
+.header .header__hero .wave .slogan {
+  margin: 25px 0 45px 0;
+  
 }
 
 /* TABLET */
 @media all and (min-width: 768px) {
-  .header__hero {
-    width: 690px;
+  .header__hero .h1 {
+    width: 700px;
   }
 
-  .header .slogan {
-    margin: 20px 0 30px 0;
+  .header .header__hero .wave .slogan {
+    margin: 40px 0 30px 0;
   }
 
 }
 
 
-/* // DESKTOP */
+/* DESKTOP */
 
 @media all and (min-width: 1280px) {
   .header {
     background-position: center left;
   }
 
-  .header__hero {
-    width: 730px;
+  .header__hero .h1 {
+    width: 950px;
+    margin-bottom: 20px;
   }
 
-  .header .slogan{
-    margin-top: 0px;
+  .header .header__hero .wave .slogan {
+    margin: 25px 0 30px 0;
   }
 }
-

@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  position: relative;
+}
+
+body {
+  background-color: rgba(25 , 179, 252);
 }
 
 a {

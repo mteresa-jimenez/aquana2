@@ -1,18 +1,18 @@
 .section02 {
-  background-color: var(--color-second-section);
+  background-color: var(--color-header);
   width: 100%;
   padding: 30px 0px 60px 0px;
   text-align: center;
 }
 
 .section02__button {
-  width: 184px;
-  height: 45px;
-  color: var(--color-secondary-button);
-  background-color: var(--color-primary-button);
+  width: 120px;
+  height: 35px;
+  color: var(--color-primary-button);
+  background-color: var(--color-secondary-button);
   border: none;
   border-radius: 22.5px;
-  margin-top: 45px;
+  margin-top: 15px;
   transition: box-shadow ease-in 0.7s, font-size ease 0.7s;
 }
 
@@ -33,13 +33,39 @@
   grid-template-columns: 1fr;
 }
 
-.article-container .article {
-  width: 184px;
-  margin: auto;
-  padding-top: 45px;
+.article-container .article img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: var(--color-header) solid 10px;
+  transform: translateY(50px);
+  z-index: 2;
+  
 }
 
-/* // TABLET */
+.article-container .article-box {
+  padding: 55px 10px 10px 10px;
+  color: white;
+  background-color: var(--font-color-midtone);
+  width: 220px;
+  height: 300px;
+  margin: auto;
+  border-radius: 12px;
+}
+
+.article1 .article-box {
+  background-color: var(--font-color-midtone);
+}
+
+.article2 .article-box {
+  background-color: var(--font-color-dark-midtone);
+}
+
+.article3 .article-box {
+  background-color: rgb(32, 218, 32);
+}
+
+/* TABLET */
 @media all and (min-width: 768px){
   .section02 {
     display: flex;
