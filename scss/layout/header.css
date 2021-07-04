@@ -8,6 +8,7 @@
   text-align: center;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .header__hero {
@@ -24,7 +25,7 @@
 }
 
 .header .header__hero .wave-svg {
-  width: 100%;
+  width: 120%;
   height: 45px;
   background-image: url(../../images/wave.svg);
   display: block;
@@ -33,6 +34,7 @@
   background-position: center;
   transform: rotate(180deg);
 }
+
 
 .header .header__hero .wave {
   width: 100vw;
@@ -43,6 +45,26 @@
   margin: 35px 15px 25px 15px;
   
 }
+
+  .wave-svg {
+    width: 120%;
+    animation-name: wave;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-delay: 1s;
+  }
+  
+  @keyframes wave {
+      from {
+        transform: translateX(0) rotate(180deg);
+      }
+      50% {
+        transform: translateX(40px) rotate(180deg);
+      }
+      to {
+        transform: translateX(0) rotate(180deg);
+      }
+    }
 
 /* TABLET */
 @media all and (min-width: 768px) {
@@ -67,5 +89,17 @@
   .header__hero .h1 {
     width: 950px;
     margin-bottom: 20px;
+  }
+
+  @keyframes wave {
+    from {
+      transform: translateX(0) rotate(180deg);
+    }
+    50% {
+      transform: translateX(120px) rotate(180deg);
+    }
+    to {
+      transform: translateX(0) rotate(180deg);
+    }
   }
 }
