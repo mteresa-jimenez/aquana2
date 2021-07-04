@@ -1,8 +1,8 @@
 .menu-toggle {
-  background-color: var(--color-footer);
+  background-color: rgba(252, 252, 252, 0.7);
   width: 55px;
   height: 50px;
-  color: var(--font-color-light);
+  color: var(--font-color-dark);
   display: block;
   position: fixed;
   left: 0px;
@@ -12,7 +12,7 @@
 }
 
 .menu-toggle:hover {
-  background-color: var(--color-header);
+  background-color: var(--color-light);
 }
 
 .menu-toggle a {
@@ -23,6 +23,7 @@
 
 .menu-toggle a:hover {
   color: var(--font-color-midtone);
+  font-weight: 600;
 }
 
 .menu-toggle__input {
@@ -38,6 +39,7 @@
 }
 
 .menu-toggle__input:checked ~ span {
+  background-color: var(--color-light);
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
 }
@@ -61,8 +63,7 @@
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-
-  background: var(--font-color-light);
+  background: var(--font-color-dark);
   border-radius: 3px;
 
   z-index: 1;
@@ -82,12 +83,12 @@
 }
 
 .menu {
+  margin: auto;
   position: absolute;
-  background-color: var(--color-header);
+  background-color: var(--color-dark);
   width: 300px;
   margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
+  padding: 110px 35px 50px 65px;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);

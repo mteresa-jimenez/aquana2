@@ -1,6 +1,9 @@
-.section01 {
-  background-color: var(--color-first-section);
+.section01-cover {
+  background-color: var(--color-light);
   width: 100%;
+}
+
+.section01 {
   max-width: 320px;
   margin: auto;
   padding: 30px 15px 45px 15px;
