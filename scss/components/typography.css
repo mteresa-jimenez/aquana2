@@ -45,10 +45,10 @@
 /* // sections */
 
 .section-title {
-  color: var(--font-color-light);
+  color: var(--color-pulpito);
   font-family: var(--font-family-titles);
-  font-size: 24px;
-  text-transform: capitalize;
+  font-size: 26px;
+  text-align: center;
 }
 
 .article-title {
@@ -62,28 +62,42 @@
   font-weight: normal;
   text-transform: capitalize;
 }
-.section01,
+.contact,
 .section02 {
   font-family: var(--font-family-text);
   font-size: 18px;
   line-height: 30px;
 }
 
-.section01__button,
+.contact__button,
 .section02__button {
   font-family: var(--font-family-text);
   font-weight: 500;
   font-size: 15px;
 }
 
-.section01 {
+.contact {
   color: var(--font-color-dark-midtone);
+}
+
+.contact input::placeholder {
+  color: var(--color-dark);
+  opacity: 0.9;
+  font-family: var(--font-family-text);
+  font-size: 16px;
+}
+
+.contact .textarea::placeholder {
+  color: var(--color-dark);
+  opacity: 0.9;
+  font-family: var(--font-family-text);
+  font-size: 16px;
 }
 
 /* // TABLET */
 
 @media all and (min-width: 768px) {
-  .section-title{
+  .section-title {
     font-size: 26px;
     line-height: 45px;
   }
@@ -92,7 +106,7 @@
     font-size: 24px;
   }
 
-  .section01,
+  .contact,
   .section02 {
     font-size: 20px;
   }
@@ -101,7 +115,7 @@
 /* // DESKTOP */
 @media all and (min-width: 1280px) {
   .section-title {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   .small-title {
