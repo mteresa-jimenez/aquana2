@@ -1,13 +1,23 @@
 /* Variables */
 
 :root {
+/* Primary colors */
+--color-dark: #233D8E;
+--color-light: white;
+--color-estrellita: #e548ad;
+--color-tiburon: #b146e8;
+--color-ballena: #19b3fc;
+--color-pez: #f4bb19;
+--color-pulpito: #f44747;
+--color-tortuga: #2ecb71;
+
+/* Section colors */
 --color-header: #233D8E;
 --color-first-section: white;
 --color-second-section: #19B3FC;
 --color-footer: #233D8E;
 
 /* buttons Color */
-
 --color-primary-button: #F44747;
 --color-secondary-button: white;
 

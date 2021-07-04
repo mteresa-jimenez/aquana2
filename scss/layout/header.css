@@ -2,7 +2,7 @@
   width: 100%;
   height: 100vh;
   background-image: url("../../images/cover.jpg");
-  background-position: top left;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -36,11 +36,11 @@
 
 .header .header__hero .wave {
   width: 100vw;
-  background: linear-gradient(rgba(25 , 179, 252, 0.8), rgb(25 , 179, 252));
+  background: linear-gradient(rgba(25 , 179, 252, 0.7), rgb(25 , 179, 252));
 }
 
 .header .header__hero .wave .slogan {
-  margin: 25px 0 45px 0;
+  margin: 35px 0 25px 0;
   
 }
 
@@ -67,9 +67,5 @@
   .header__hero .h1 {
     width: 950px;
     margin-bottom: 20px;
-  }
-
-  .header .header__hero .wave .slogan {
-    margin: 25px 0 30px 0;
   }
 }

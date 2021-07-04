@@ -1,31 +1,28 @@
 .section02 {
-  background-color: var(--color-header);
+  background-color: var(--color-dark);
   width: 100%;
   padding: 30px 0px 60px 0px;
   text-align: center;
 }
 
 .section02__button {
-  width: 120px;
+  width: 140px;
   height: 35px;
-  color: var(--color-primary-button);
-  background-color: var(--color-secondary-button);
+  color: var(--color-dark);
+  background-color: var(--color-light);
   border: none;
   border-radius: 22.5px;
-  margin-top: 15px;
-  transition: box-shadow ease-in 0.7s, font-size ease 0.7s;
+  margin: 15px;
 }
 
 .section02__button:hover {
-  box-shadow: 2px 4px 6px 0 black;
+  border: var(--color-dark) solid 2px;
 }
 
 .section02__button:active {
-  color: var(--color-primary-button);
-  font-size: 18px;
-  background-color: var(--color-secondary-button);
-  border: var(--color-primary-button) solid 2px;
-  box-shadow: none;
+  color: var(--color-light);
+  font-weight: bold;
+  background-color: var(--color-dark);
 }
 
 .article-container {
@@ -44,9 +41,12 @@
 }
 
 .article-container .article-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 55px 10px 10px 10px;
   color: white;
-  background-color: var(--font-color-midtone);
   width: 220px;
   height: 300px;
   margin: auto;
@@ -54,15 +54,15 @@
 }
 
 .article1 .article-box {
-  background-color: var(--font-color-midtone);
+  background-color: var(--color-estrellita);
 }
 
 .article2 .article-box {
-  background-color: var(--font-color-dark-midtone);
+  background-color: var(--color-tortuga);
 }
 
 .article3 .article-box {
-  background-color: rgb(32, 218, 32);
+  background-color: var(--color-pez);
 }
 
 /* TABLET */
@@ -73,13 +73,14 @@
     align-items: center;
   }
 
-  .section02__button {
-    width: 210px;
-  }
-
   .article-container {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 27.5px;
+    grid-gap: 30px;
+  }
+
+  .article-container .article-box {
+    width: 200px;
+    height: 330px;
   }
 
   .article-container .article {
@@ -93,12 +94,15 @@
 
 /* // DESKTOP */
 @media all and (min-width: 1280px) {
-  .section02 {
-    padding: 60px 0px;
+
+  .article-container .article img {
+    width: 240px;
+    height: 240px;
   }
 
-  .section02__button {
-    width: 255px;
+  .article-container .article-box {
+    width: 260px;
+    height: 290px;
   }
 
   .article-container {
