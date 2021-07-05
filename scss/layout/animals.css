@@ -36,28 +36,8 @@
 /* DESKTOP */
 
 @media all and (min-width: 1280px) {
-    /* .wave-dark {
-        width: 110%;
-        animation-name: wave-dark;
-        animation-duration: 5s;
-        animation-iteration-count:infinite;
-        animation-delay: 1s;
-      }
-      
-      @keyframes wave-dark {
-          from {
-            transform: translateX(80px) rotate(180deg);
-          }
-          50% {
-            transform: translateX(0) rotate(180deg);
-          }
-          to {
-            transform: translateX(80px) rotate(180deg);
-          }
-        } */
-
     .animals {
-        height: 200px;
+        height: 220px;
     }
     
     .animals img {
