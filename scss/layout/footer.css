@@ -1,79 +1,102 @@
 .footer {
   background-color: var(--color-footer);
+  padding: 0px 0 25px 0;
+}
+
+.footer-nav {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-light);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 0 45px 0;
+  justify-content: space-between;
 }
 
-.footer .icon-arrow {
-  width: 45px;
-  height: 45px;
-  padding: 11px 12px 10px 12.4px;
-  background-color: var(--color-secondary-button);
-  border-radius: 22.5px;
-  box-shadow: 0 2px 4px 0 black;
-  transform: translate(0px, -22.5px);
-  transition: box-shadow ease-out 0.7s;
-  animation-name: arrow;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+.footer-nav img {
+  width: 150px;
+  height: 150px;
+}
+
+.footer-nav nav {
+  transform: translateY(-25px);
+  font-weight: bold;
 }
 
 .footer__elements {
+  background-color: var(--color-footer);
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 25px;
 }
 
 .footer .list-sections,
 .footer .list-socialmedia {
     list-style: none;
-    margin: 15px 0 15px 0;    
+}
+
+.footer .list-socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .footer .list-sections .link-sections,
 .footer .list-socialmedia .link-socialmedia {
-      padding: 15px;
+      padding: 0 15px;
 }
 
 .footer .list-sections .link-sections:hover,
 .footer .list-socialmedia .link-socialmedia:hover {
-  font-weight: bold;
+  color: var(--color-pulpito);
 }
 
-.footer .copy {
-  margin-top: 15px;
-}
-
-.footer .copy .heart-icon {
+.footer .copy .small {
   color: var(--font-color-midtone);
+  margin: 5px;
 }
 
   /* TABLET */
 @media all and (min-width: 768px) {
+  .footer-nav {
+    flex-direction: row;
+    padding: 25px 200px;
+  }
+
+  .footer-nav nav {
+    transform: translateY(0);
+  }
+
   .footer__elements {
     max-width: 768px;
     flex-direction: row;
     justify-content: space-between;
-    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 39px;
   }
 
-  .footer .list-sections,
-  .footer .list-socialmedia {
-    margin: 0px;
-  }
-
-  .footer .copy{
+  .footer .copy {
     order: -2;
+    margin-top: 5px;
   }
 }
 
 /* DESKTOP */
 @media all and (min-width: 1280px) {
+  .footer-nav {
+    justify-content: space-evenly;
+    padding: 0 100px;
+  }
+  .footer-nav img {
+    width: 250px;
+    height: 250px;
+  }
+
   .footer__elements {
     max-width: 1280px;
-    padding: 0 370px;
   }
 }

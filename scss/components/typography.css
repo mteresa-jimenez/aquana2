@@ -126,6 +126,12 @@
 
 /* // footer */
 
+.footer-nav {
+  color: var(--font-color-dark);
+  font-family: var(--font-family-text);
+  text-align: center;
+}
+
 .footer__elements {
   color: var(--font-color-light);
   font-family: var(--font-family-text);
