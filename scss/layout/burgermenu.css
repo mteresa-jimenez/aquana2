@@ -98,3 +98,10 @@
   padding: 10px 0;
   font-size: 22px;
 }
+
+/* DESKTOP */
+@media all and (min-width: 1280px) {
+  .menu-toggle {
+      display: none;
+  }
+}
