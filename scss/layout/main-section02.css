@@ -10,52 +10,38 @@
   text-align: center;
 }
 
-.section02__button {
-  width: 140px;
-  height: 35px;
-  color: var(--color-dark);
-  background-color: var(--color-light);
-  border: none;
-  border-radius: 22.5px;
-  margin: 15px;
-}
-
-.section02__button:hover {
-  border: var(--color-dark) solid 2px;
-}
-
-.section02__button:active {
-  color: var(--color-light);
-  font-weight: bold;
-  background-color: var(--color-dark);
-}
-
 .article-container {
   display: grid;
   grid-template-columns: 1fr;
 }
 
 .article-container .article img {
-  width: 200px;
-  height: 200px;
+  width: 245px;
+  height: 245px;
   border-radius: 50%;
   border: rgba(252 ,252 , 252, 0.7) solid 10px;
   transform: translateY(50px);
   z-index: 2;
-  
 }
 
 .article-container .article-box {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 55px 10px 10px 10px;
+  padding: 55px 12px 20px 12px;
   color: white;
-  width: 220px;
-  height: 300px;
+  width: 255px;
+  min-height: 255px;
   margin: auto;
   border-radius: 12px;
+}
+
+.article-container .article-box h3 {
+  margin-bottom: 10px;
+}
+
+.article-container .article-box p {
+  font-size: 16px;
 }
 
 .article1 .article-box {
@@ -83,13 +69,26 @@
     grid-gap: 30px;
   }
 
-  .article-container .article-box {
-    width: 200px;
-    height: 330px;
+  .article-container .article img {
+    width: 210px;
+    height: 210px;
   }
 
-  .article-container .article {
-    width: 210px;
+  .article-container .article-box {
+    width: 220px;
+    height: 450px;
+  }
+
+  .article1 .article-box p {
+    font-size: 18px;
+  }
+  
+  .article2 .article-box p, .article3 .article-box ul {
+    font-size: 20px;
+  }
+  
+  .article3 .article-box ul li {
+    margin: 20px 0;
   }
 
   .article-container .article .article-title {
@@ -101,13 +100,26 @@
 @media all and (min-width: 1280px) {
 
   .article-container .article img {
-    width: 240px;
-    height: 240px;
+    width: 270px;
+    height: 270px;
   }
 
   .article-container .article-box {
-    width: 260px;
-    height: 290px;
+    width: 300px;
+    height: 355px;
+    padding: 55px 16px 25px 16px;
+  }
+
+  .article-container .article-box h3 {
+    font-size: 26px;
+  }
+
+  .article2 .article-box p, .article3 .article-box ul {
+    font-size: 24px;
+  }
+  
+  .article3 .article-box ul li {
+    margin: 20px 0;
   }
 
   .article-container {
