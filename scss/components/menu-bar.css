@@ -32,4 +32,8 @@
         font-weight: 600;
     }
 
+    .header__menu-bar ul li:hover {
+        color: var(--font-color-midtone);
+    }
+
 }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AquaNa2 - Localización</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/core/reset.css" />
+    <link rel="stylesheet" href="./scss/core/variables.css" />
+    <link rel="stylesheet" href="./scss/components/typography.css" />
+    <link rel="stylesheet" href="./scss/components/menu-bar.css" />
+    <link rel="stylesheet" href="./scss/layout/burgermenu.css" />
+    <link rel="stylesheet" href="./scss/layout/location.css" />
+    <link rel="stylesheet" href="./scss/layout/contact.css" />
+    <link rel="stylesheet" href="./scss/layout/footer.css" />
+    <link rel="icon" href="./images/Logos/ballena.png" type="image/x-icon"/>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+
+  <body>
+    <nav class="header__menu" role="navigation">
+        <div class="menu-toggle">
+          <input class="menu-toggle__input" type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul class="menu">
+            <a href="./index.html"><li>Home</li></a>
+            <a href="#"><li>Conócenos</li></a>
+            <a href="#"><li>Instalaiones</li></a>
+            <a href="#"><li>Clases</li></a>
+            <a href="#"><li>Contáctanos</li></a>
+          </ul>
+        </div>
+      </nav>
+      <nav class="header__menu-bar" role="navigation">
+        <img src="./images/Logos/logo-aquana2-blanco.png" href="./index.html" alt="Logo AquaNa2">
+        <ul>
+          <li><a href="#"></a>Conócenos</li>
+          <li><a href="#"></a>Instalaciones</li>
+          <li><a href="#"></a>Clases</li>
+          <li><a href="#"></a>Contáctanos</li>
+          <li><a href="#"></a>Ubicación</li>
+        </ul>
+      </nav>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12313.775662587117!2d-100.2719991210822!3d25.783094787827793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629351098f9f01%3A0xbabac940604d9904!2sCalle%20V.%20de%20Los%20Eucaliptos%20401%2C%20Valle%20de%20Las%20Palmas%20I%2C%2066635%20Cd%20Apodaca%2C%20N.L.%2C%20M%C3%A9xico!5e0!3m2!1ses!2sde!4v1628272188340!5m2!1ses!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div id="contact"></div>
+    <div id="footer"></div>
+     <script>
+      $( "#contact" ).load( "./html/partials/contact.html" );
+      $( "#footer" ).load( "./html/partials/footer.html" );
+    </script>
+  </body>
+</html>
