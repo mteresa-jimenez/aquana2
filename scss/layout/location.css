@@ -1,4 +1,121 @@
-.map {
-    max-width: 800px;
+.location {
     margin: auto;
+    padding-top: 60px;
+    background-color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location h1 {
+    color: var(--font-color-midtone);
+    font-family: var(--font-family-titles);
+    text-align: center;
+    font-size: 30px;
+}
+
+.location .map-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+
+}
+
+.location .map-container .address {
+    color: var(--font-color-light);
+    font-family: var(--font-family-text);
+}
+
+.location .map-container .address h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.location .map-container .address img {
+    display: none;
+}
+
+.location .map-container .map {
+    margin-top: 15px;
+    max-width: 450px;
+    height: 450px;
+}
+
+/* TABLET */
+@media all and (min-width: 768px){
+    .location .map-container {
+        width: 100%;
+        max-width: none;
+        padding: 30px 69px;
+    }
+
+    .location .map-container .map {
+        max-width: none;
+        margin-top: 25px;
+    }
+}
+
+
+/* DESKTOP */
+@media all and (min-width: 1280px){
+
+    .location {
+        padding-top: 120px;
+        display: block;
+    }
+
+    .location h1 {
+        font-size: 42px;
+    }
+    
+    .location .map-container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding-bottom: 75px;
+    }
+
+    .location .map-container .address {
+        width: 300px;
+        position: relative;
+    }
+
+    .location .map-container .address h3 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .location .map-container .address p {
+        font-size: 24px;
+    }
+
+    .location .map-container .address img {
+        display: block;
+        width: 180px;
+        position: absolute;
+        bottom: 0;
+        right: -20px;
+        animation-name: location-fish;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes location-fish {
+        from{
+            transform: rotate(-20deg);
+        }
+        to {
+            transform: rotate(5deg);
+        }
+    }
+
+    .location .map-container .map {
+        max-width: none;
+        width: 500px;
+        margin-top: 0;
+    }
 }

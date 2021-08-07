@@ -34,9 +34,9 @@
             <a href="#"><li>Contáctanos</li></a>
           </ul>
         </div>
-      </nav>
-      <nav class="header__menu-bar" role="navigation">
-        <img src="./images/Logos/logo-aquana2-blanco.png" href="./index.html" alt="Logo AquaNa2">
+    </nav>
+    <nav class="header__menu-bar" role="navigation">
+        <a href="./index.html"><img src="./images/Logos/logo-aquana2-blanco.png" alt="Logo AquaNa2"></a>
         <ul>
           <li><a href="#"></a>Conócenos</li>
           <li><a href="#"></a>Instalaciones</li>
@@ -44,12 +44,22 @@
           <li><a href="#"></a>Contáctanos</li>
           <li><a href="#"></a>Ubicación</li>
         </ul>
-      </nav>
-    <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12313.775662587117!2d-100.2719991210822!3d25.783094787827793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629351098f9f01%3A0xbabac940604d9904!2sCalle%20V.%20de%20Los%20Eucaliptos%20401%2C%20Valle%20de%20Las%20Palmas%20I%2C%2066635%20Cd%20Apodaca%2C%20N.L.%2C%20M%C3%A9xico!5e0!3m2!1ses!2sde!4v1628272188340!5m2!1ses!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
+    </nav>
+    <section class="location">
+      <h1>¿Dónde estamos?</h1>
+      <div class="map-container">
+        <div class="address">
+          <h3>Dirección:</h3>
+          <p>Valle de los eucaliptos 401 (casi esquina Av. Concordia)
+            <br>
+            Colonia Valle de Las Palmas 2ndo Sector. Apodaca</p>
+            <img src="./images/Logos/pecesito.png" alt="pececito amarillo">
+        </div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12313.775662587117!2d-100.2719991210822!3d25.783094787827793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629351098f9f01%3A0xbabac940604d9904!2sCalle%20V.%20de%20Los%20Eucaliptos%20401%2C%20Valle%20de%20Las%20Palmas%20I%2C%2066635%20Cd%20Apodaca%2C%20N.L.%2C%20M%C3%A9xico!5e0!3m2!1ses!2sde!4v1628272188340!5m2!1ses!2sde" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
     <div id="contact"></div>
     <div id="footer"></div>
+    </section>
      <script>
       $( "#contact" ).load( "./html/partials/contact.html" );
       $( "#footer" ).load( "./html/partials/footer.html" );
