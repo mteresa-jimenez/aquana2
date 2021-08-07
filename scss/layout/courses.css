@@ -1,0 +1,35 @@
+.courses {
+    margin: auto;
+    padding-top: 60px;
+    background: url("../../images/wallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.courses h1 {
+    color: var(--font-color-dark);
+    font-family: var(--font-family-titles);
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+}
+
+.courses p {
+    color: var(--font-color-dark);
+    font-family: var(--font-family-titles);
+    font-size: 18px;
+    margin: auto;
+}
+
+.courses .courses-boxes .stars {
+    border: 3px solid var(--color-estrellita);
+}
+
+.courses .courses-boxes .box img{
+    width: 150px;
+}

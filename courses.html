@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AquaNa2 - Localización</title>
+    <title>AquaNa2 - Clases</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./scss/components/typography.css" />
     <link rel="stylesheet" href="./scss/components/menu-bar.css" />
     <link rel="stylesheet" href="./scss/layout/burgermenu.css" />
-    <link rel="stylesheet" href="./scss/layout/location.css" />
+    <link rel="stylesheet" href="./scss/layout/courses.css" />
     <link rel="stylesheet" href="./scss/layout/contact.css" />
     <link rel="stylesheet" href="./scss/layout/footer.css" />
     <link rel="icon" href="./images/Logos/ballena.png" type="image/x-icon"/>
@@ -28,7 +28,7 @@
           <span></span>
           <ul class="menu">
             <a href="./index.html"><li>Home</li></a>
-            <a href="./courses.html"><li>Conócenos</li></a>
+            <a href="#"><li>Conócenos</li></a>
             <a href="#"><li>Instalaiones</li></a>
             <a href="#"><li>Clases</li></a>
             <a href="#"><li>Contáctanos</li></a>
@@ -40,26 +40,20 @@
         <ul>
           <li><a href="#">Conócenos</a></li>
           <li><a href="#">Instalaciones</a></li>
-          <li><a href="./courses.html">Clases</a></li>
+          <li><a href="#">Clases</a></li>
           <li><a href="#">Contáctanos</a></li>
-          <li><a href="./location.html"></a>Ubicación</li>
+          <li><a href="#">Ubicación</a></li>
         </ul>
     </nav>
-    <section class="location">
-      <h1>¿Dónde estamos?</h1>
-      <div class="map-container">
-        <div class="address">
-          <h3>Dirección:</h3>
-          <p>Valle de los eucaliptos 401 (casi esquina Av. Concordia)
-            <br>
-            Colonia Valle de Las Palmas 2ndo Sector. Apodaca</p>
-            <img src="./images/Logos/pecesito.png" alt="pececito amarillo">
-        </div>
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12313.775662587117!2d-100.2719991210822!3d25.783094787827793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629351098f9f01%3A0xbabac940604d9904!2sCalle%20V.%20de%20Los%20Eucaliptos%20401%2C%20Valle%20de%20Las%20Palmas%20I%2C%2066635%20Cd%20Apodaca%2C%20N.L.%2C%20M%C3%A9xico!5e0!3m2!1ses!2sde!4v1628272188340!5m2!1ses!2sde" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <section class="courses">
+      <h1>Clases</h1>
+      <p>Este es el mejor lugar para introducir a los bebes, niños y niñas a la magia del medio acuático.</p>
+      <div class="js-courses-boxes courses-boxes">
       </div>
-    <div id="contact"></div>
-    <div id="footer"></div>
+      <div id="contact"></div>
+      <div id="footer"></div>
     </section>
+    <script type="text/javascript" src="./js/main.js"></script>
      <script>
       $( "#contact" ).load( "./html/partials/contact.html" );
       $( "#footer" ).load( "./html/partials/footer.html" );
