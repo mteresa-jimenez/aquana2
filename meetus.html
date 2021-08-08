@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AquaNa2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/core/reset.css" />
+    <link rel="stylesheet" href="./scss/core/variables.css" />
+    <link rel="stylesheet" href="./scss/components/typography.css" />
+    <link rel="stylesheet" href="./scss/components/menu-bar.css" />
+    <link rel="stylesheet" href="./scss/layout/header.css" />
+    <link rel="stylesheet" href="./scss/layout/burgermenu.css" />
+    <link rel="stylesheet" href="./scss/layout/meetus.css" />
+    <link rel="stylesheet" href="./scss/layout/contact.css" />
+    <link rel="stylesheet" href="./scss/layout/main-section02.css" />
+    <link rel="stylesheet" href="./scss/layout/footer.css" />
+    <link rel="icon" href="./images/Logos/ballena.png" type="image/x-icon"/>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+
+  <body>
+    <nav class="header__menu" role="navigation">
+      <div class="menu-toggle">
+        <input class="menu-toggle__input" type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menu">
+          <a href="./index.html"><li>Home</li></a>
+          <a href=".meetus.html"><li>Conócenos</li></a>
+          <a href="./facilities.html"><li>Instalaciones</li></a>
+          <a href="./courses.html"><li>Clases</li></a>
+          <a href="#contact"><li>Contáctanos</li></a>
+          <a href="location.html"><li>Ubicación</li></a>
+        </ul>
+      </div>
+    </nav>
+    <nav class="header__menu-bar" role="navigation">
+      <a href="./index.html"><img src="./images/Logos/logo-aquana2-blanco.png" alt="Logo AquaNa2"></a>
+      <ul>
+        <li><a href="./meetus.html">Conócenos</a></li>
+        <li><a href="./facilities.html">Instalaciones</a></li>
+        <li><a href="./courses.html">Clases</a></li>
+        <li><a href="#contact">Contáctanos</a></li>
+        <li><a href="location.html">Ubicación</a></li>
+      </ul>
+    </nav>
+    <div class="meetus">
+      <section class="section02" id="section02">
+        <h1 class="section-title" tabindex="1">¿Quiénes somos?</h2>
+        <div class="article-container">
+          <article class="article article1">
+            <img src="./images/nina-buzo.jpg" alt="">
+            <div class="article-box">
+                <h3 class="article-title" tabindex="1">Nuestra historia</h3>
+                <p>AquaNa2 nace en el 2021 con la intención de ayudar a que todos los niños de la comunidad aprendan a nadar con seguridad. Nuestras instalaciones climatizadas nos permiten que tus hijos aprendan y se diviertan, ¡todos los días del año!</p>
+          </div>
+          </article>
+          <article class="article article2">
+            <img src="./images/nado-mariposa.jpg" alt="">
+            <div class="article-box">
+                <h3 class="article-title" tabindex="1">Misión</h3>
+                <p>Ofrecer educación acuática
+                  con calidad y calidez
+                  para disfrutar con seguridad
+                  El agua y la vida</p>
+            </div>
+         </article>
+          <article class="article article3">
+            <img src="./images/sydney-rae-74vPYQxfVBI-unsplash.jpg" alt="">
+            <div class="article-box">
+                <h3 class="article-title" tabindex="1">Valores</h3>
+                <ul>
+                  <li>Seguridad</li>
+                  <li>Calidad</li>
+                  <li>Comunidad</li>
+                </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+    <div id="contact"></div>
+    <div id="footer"></div>
+     <script>
+      $( "#header" ).load( "./html/partials/header.html" );
+      $( "#animals" ).load( "./html/partials/animals.html" );
+      $( "#main-section02" ).load( "./html/partials/main-section02.html" );
+      $( "#contact" ).load( "./html/partials/contact.html" );
+      $( "#footer" ).load( "./html/partials/footer.html" );
+    </script>
+  </body>
+</html>
