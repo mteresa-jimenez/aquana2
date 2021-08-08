@@ -61,6 +61,16 @@
     color: var(--color-light);
     border-radius: 25px;
     font-size: 18px;
+    transition: box-shadow 0.8s ease;
+}
+
+.courses .courses-boxes button:hover {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.courses .courses-boxes .box button:active {
+    box-shadow: none;
+    background-color: var(--color-dark);
 }
 
 /* Estrellitas */
