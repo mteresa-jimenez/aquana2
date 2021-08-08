@@ -108,10 +108,14 @@
 /* DESKTOP */
 
 @media all and (min-width: 1280px) {
+  .contact-cover {
+    height: 100vh;
+  }
+
   .contact {
     max-width: 1024px;
     max-height: 550px;
-    margin: 50px auto;
+    margin: 80px auto;
   }
 
   .contact .textarea {

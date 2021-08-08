@@ -26,10 +26,92 @@
     margin: auto;
 }
 
+.courses .courses-boxes .box {
+    width: 310px;
+    margin: auto;
+    background-color: var(--color-light);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courses .courses-boxes .box h3 {
+    width: 100%;
+    height: 40px;
+    color: var(--color-light);
+    font-family: var(--font-family-titles);
+    font-size: 24px;
+    text-align: center;
+}
+
+.courses .courses-boxes .box p {
+    margin: 0 15px 15px 15px;
+}
+
+.courses .courses-boxes button {
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    color: var(--color-light);
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+/* Estrellitas */
+
 .courses .courses-boxes .stars {
     border: 3px solid var(--color-estrellita);
+}
+
+.courses .courses-boxes .stars h3 {
+    background-color: var(--color-estrellita);
 }
 
 .courses .courses-boxes .box img{
     width: 150px;
 }
+.courses .courses-boxes .stars p {
+    color: var(--color-estrellita);
+}
+
+.courses .courses-boxes .stars button {
+    background-color: var(--color-estrellita);
+}
+
+/* Tortuguitas */
+
+.courses .courses-boxes .turtles {
+    border: 3px solid var(--color-tortuga);
+}
+
+.courses .courses-boxes .turtles h3 {
+    background-color: var(--color-tortuga);
+}
+
+.courses .courses-boxes .turtles p {
+    color: var(--color-tortuga);
+}
+
+.courses .courses-boxes .turtles button {
+    background-color: var(--color-tortuga);
+}
+
+/* Pececitos */
+.courses .courses-boxes .fishes {
+    border: 3px solid var(--color-pez);
+}
+
+.courses .courses-boxes .fishes h3 {
+    background-color: var(--color-pez);
+}
+
+.courses .courses-boxes .fishes p {
+    color: var(--color-pez);
+}
+
+.courses .courses-boxes .fishes button {
+    background-color: var(--color-pez);
+}
+
