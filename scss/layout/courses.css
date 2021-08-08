@@ -1,6 +1,6 @@
 .courses {
     margin: auto;
-    padding-top: 60px;
+    padding: 40px 15px 30px 15px;
     background: url("../../images/wallpaper.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -15,8 +15,9 @@
     color: var(--font-color-dark);
     font-family: var(--font-family-titles);
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     margin: auto;
+    padding-bottom: 15px;
 }
 
 .courses p {
@@ -27,8 +28,10 @@
 }
 
 .courses .courses-boxes .box {
-    width: 310px;
-    margin: auto;
+    width: 100%;
+    min-width: 310px;
+    max-width: 650px;
+    margin: 20px auto;
     background-color: var(--color-light);
     border-radius: 10px;
     display: flex;
@@ -114,4 +117,79 @@
 .courses .courses-boxes .fishes button {
     background-color: var(--color-pez);
 }
+
+/* Pulpitos */
+.courses .courses-boxes .octopus {
+    border: 3px solid var(--color-pulpito);
+}
+
+.courses .courses-boxes .octopus h3 {
+    background-color: var(--color-pulpito);
+}
+
+.courses .courses-boxes .octopus p {
+    color: var(--color-pulpito);
+}
+
+.courses .courses-boxes .octopus button {
+    background-color: var(--color-pulpito);
+}
+
+/* Orcas */
+.courses .courses-boxes .whales {
+    border: 3px solid var(--color-ballena);
+}
+
+.courses .courses-boxes .whales h3 {
+    background-color: var(--color-ballena);
+}
+
+.courses .courses-boxes .whales p {
+    color: var(--color-ballena);
+}
+
+.courses .courses-boxes .whales button {
+    background-color: var(--color-ballena);
+}
+
+/* Tibunores */
+.courses .courses-boxes .sharks {
+    border: 3px solid var(--color-tiburon);
+}
+
+.courses .courses-boxes .sharks h3 {
+    background-color: var(--color-tiburon);
+}
+
+.courses .courses-boxes .sharks p {
+    color: var(--color-tiburon);
+}
+
+.courses .courses-boxes .sharks button {
+    background-color: var(--color-tiburon);
+}
+
+/* Acuaerobics */
+.courses .courses-boxes .aquaerobics {
+    border: 3px solid black;
+}
+
+.courses .courses-boxes .aquaerobics h3 {
+    background-color: black;
+}
+
+.courses .courses-boxes .aquaerobics p {
+    color: black;
+}
+
+.courses .courses-boxes .aquaerobics button {
+    background-color: black;
+}
+
+
+
+
+
+
+
 
