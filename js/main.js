@@ -54,7 +54,7 @@ const aquaerobics = {
 
 function paintCourses() {
     let html = "";
-    html += "<ul>";
+    html += '<ul class="kids">';
     for (const course of courses) {
         html += "<li>";
         html += `<div class="${course.class + " box"}">`;
@@ -66,15 +66,13 @@ function paintCourses() {
         html += "</div>"
         html += "</li>";
     };
-    html += "<li>";
+    html += "</ul>"
     html += `<div class="${aquaerobics.class + " box"}">`;
     html += `<h3>${aquaerobics.name}</h3>`;
     html += `<p>${aquaerobics.content}</p>`;
     html += `<p>${aquaerobics.groups}</p>`;
     html += '<a href="#contact"><button>Contáctanos</button></a>'
     html += "</div>"
-    html += "</li>";
-    html += "</ul>"
 
     const coursesContainer = document.querySelector(".js-courses-boxes");
     coursesContainer.innerHTML = html;

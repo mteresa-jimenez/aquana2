@@ -36,6 +36,7 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -186,8 +187,48 @@
     background-color: black;
 }
 
+/* DESKTOP */
 
+@media all and (min-width: 1280px) {
+    .courses {
+        padding-top: 100px;
+    }
 
+    .courses h1 {
+        font-size: 42px;
+    }
+
+    .courses .courses-boxes {
+        margin-top: 30px;
+    }
+
+    .courses .courses-boxes .box button {
+        margin-bottom: 30px;
+    }
+
+    .courses .courses-boxes .kids {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        max-width: 1024px;
+        grid-gap: 50px;
+    }
+
+    .courses .courses-boxes .kids .box {
+        height: 590px;
+        max-width: none;
+        margin: 0;
+    }
+
+    .courses .courses-boxes .aquaerobics {
+        max-width: 1024px;
+        width: 100%;
+    }
+
+    .courses .courses-boxes .aquaerobics h3 {
+        margin-bottom: 20px;
+    }
+}
 
 
 
