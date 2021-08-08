@@ -1,3 +1,9 @@
+/* .header__menu {
+  width: 100%;
+  background-color: honeydew;
+  display: flex;
+} */
+
 .menu-toggle {
   background-color: rgba(252, 252, 252, 0.7);
   width: 55px;
@@ -97,6 +103,10 @@
 .menu li {
   padding: 10px 0;
   font-size: 22px;
+}
+
+.header__menu .logo-mobile {
+  width: 55px;
 }
 
 /* DESKTOP */
