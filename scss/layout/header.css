@@ -20,8 +20,7 @@
 
 .header__hero h1 {
   width: 290px;
-  margin-bottom: 15px;
-  color: var(--font-color-dark-midtone);
+  color: var(--font-color-light);
 }
 
 .header .header__hero .wave-svg {
@@ -88,7 +87,6 @@
 
   .header__hero .h1 {
     width: 950px;
-    margin-bottom: 20px;
   }
 
   @keyframes wave {
