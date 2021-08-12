@@ -76,7 +76,7 @@
 }
 
 .contact {
-  color: var(--font-color-dark-midtone);
+  color: var(--font-color-light);
 }
 
 .contact input::placeholder {
