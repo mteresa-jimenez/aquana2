@@ -1,6 +1,10 @@
 .facilities {
     padding-top: 50px;
-    background-color: var(--color-dark);
+    background: url(../../images/wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .facilities h1 {
@@ -14,6 +18,12 @@
     margin: auto;
 }
 
+.facilities .carousel img {
+    width: 375px;
+    height: 281px;
+    object-fit: cover;
+}
+
 .facilities .facilities-description {
     max-width: 750px;
     margin: auto;
@@ -24,6 +34,14 @@
 .facilities .facilities-description h3 {
     color: var(--font-color-light);
     margin-top: 20px;
+}
+
+/* TABLET */
+@media all and (min-width: 768px) {
+    .facilities .facilities-description {
+        display: none;
+        padding-bottom: 30px;
+    }
 }
 
 /* DESKTOP */
@@ -44,6 +62,7 @@
     .facilities .carousel img {
         width: 100%;
         height: 100vh;
+        object-fit: cover;
     }
 
     .facilities .facilities-description {
