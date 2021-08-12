@@ -28,11 +28,11 @@
     max-width: 750px;
     margin: auto;
     padding: 15px;
-    color: var(--font-color-light);
+    color: var(--font-color-dark);
 }
 
 .facilities .facilities-description h3 {
-    color: var(--font-color-light);
+    color: var(--font-color-dark);
     margin-top: 20px;
 }
 
