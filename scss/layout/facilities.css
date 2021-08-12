@@ -11,7 +11,7 @@
 
 .facilities .carousel {
     max-width:  1024px;
-    margin: 20px auto;
+    margin: auto;
 }
 
 .facilities .facilities-description {
@@ -22,7 +22,7 @@
 }
 
 .facilities .facilities-description h3 {
-    color: var(--font-color-dark-midtone);
+    color: var(--font-color-light);
     margin-top: 20px;
 }
 
@@ -47,11 +47,14 @@
     }
 
     .facilities .facilities-description {
-        max-width: 1024px;
-        padding-bottom: 80px;
+        display: none;
     }
 
     .facilities .facilities-description h3 {
         margin-top: 25px;
+    }
+
+    .facilities .carousel-container {
+        padding-bottom: 40px;
     }
 }
